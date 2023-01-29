@@ -34,6 +34,12 @@ hr { clear:both; }
     border-radius: 20px;
     #background-color: #FFFFFF;
 }
+
+.button-github:hover {
+    background-color:rgb(178,159,95);
+    color: #FFFFFF;
+}
+
 .downloads .button {
     font-size: 20px;
     display:inline-block;
@@ -44,6 +50,12 @@ hr { clear:both; }
     border: 5px solid rgb(221,65,45);
     border-radius: 20px;
 }
+
+.downloads .button:hover {
+    background-color: rgb(221,65,45);
+    color: #FFFFFF;
+}
+
 
 .downloads .platform {
     text-transform: uppercase; font-family:monospace; font-size: 24px; font-weight:bold;
