@@ -1,0 +1,62 @@
+html, body { margin: 0; padding: 0; }
+body { font-family: arial; background-color: #eee; #rgb(240, 242, 244)}
+
+a { text-decoration: none; }
+
+.header { 
+    font-family: arial; font-style: italic; 
+    color:#EF6818; background-color:#BAC0C5; 
+    color:rgb(255,98,0);
+}
+.header h1 { display:inline-block; font-size:40px; margin: 0; padding: 10px 10px; padding-left:150px; }
+
+#content { margin: 1em; }
+
+.info-github { float:right; }
+.info p { padding-left: 50px; }
+
+hr { clear:both; }
+
+.downloads ul { list-style:none; }
+
+.downloads h2 { background-color: rgb(255,15,94); border: 2px solid #fff; outline: 1px solid #bbb; padding: 10px; display:inline-block; }
+
+.button-github {
+    font-size: 20px;
+    display:inline-block;
+    margin:3px; padding:10px;
+    #color:rgb(0,96,169);
+    color:rgb(178,159,95);
+    font-weight:bold;
+    border: 5px dotted rgb(178,159,95);
+    border-radius: 20px;
+    #background-color: #FFFFFF;
+}
+.downloads .button {
+    font-size: 20px;
+    display:inline-block;
+    margin:3px; padding:10px;
+    color: rgb(221,65,45);
+    #background-color: #FFFFFF;
+    font-weight:bold;
+    border: 5px solid rgb(221,65,45);
+    border-radius: 20px;
+}
+
+.downloads .platform {
+    text-transform: uppercase; font-family:monospace; font-size: 24px; font-weight:bold;
+    color: rgb(248,198,17); 
+}
+
+.discord {
+    display: inline-block;
+    padding: 10px 50px;
+    border: 2px solid black;
+    background-color: #ffffff;
+    color: rgb(252,69,87);
+    transform: rotate(-45deg);
+    width: 90px;
+    text-transform: uppercase;
+    font-weight:bold;
+    position: absolute; top:-5px; left:-50px;
+}
