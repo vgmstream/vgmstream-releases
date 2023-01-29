@@ -3,19 +3,21 @@ body { font-family: arial; background-color: #eee; #rgb(240, 242, 244)}
 
 a { text-decoration: none; }
 
-.header { 
+header { 
     font-family: arial; font-style: italic; 
     color:#EF6818; background-color:#BAC0C5; 
     color:rgb(255,98,0);
 }
-.header h1 { display:inline-block; font-size:40px; margin: 0; padding: 10px 10px; padding-left:150px; }
+header h1 { display:inline-block; font-size:40px; margin: 0; padding: 10px 10px; padding-left:150px; }
 
-#content { margin: 1em; }
+main { margin: 1em; }
+
+hr { clear:both; }
 
 .info-github { float:right; }
 .info p { padding-left: 50px; }
 
-hr { clear:both; }
+.is-hidden { display:none; }
 
 .downloads ul { list-style:none; }
 
@@ -59,4 +61,21 @@ hr { clear:both; }
     text-transform: uppercase;
     font-weight:bold;
     position: absolute; top:-5px; left:-50px;
+}
+
+.changes #changelog-link {
+    color: #000;
+    font-size:15px;
+    font-weight:bold;
+}
+.changes #changelog-link::before { content:'►'; }
+
+.changes #changelog-body {
+    white-space: pre-wrap;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 0.9em;
+    font-family: monospace;
+    padding: 10px;
+    max-width: 600px;    
 }
