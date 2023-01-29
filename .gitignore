@@ -1,0 +1,7 @@
+.*
+!/.gitignore
+!.gitattributes
+!.github
+
+*.zip
+*.fb2k-component
