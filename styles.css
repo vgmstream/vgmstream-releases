@@ -101,5 +101,7 @@ hr { clear:both; }
     font-size: 0.9em;
     font-family: monospace;
     padding: 1em;
-    max-width: 600px;    
+    max-width: 60em;    
+    margin: 0.5em 0 2em 0;
+    max-height: 20em; overflow: auto;
 }
