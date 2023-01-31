@@ -1,84 +1,96 @@
-html, body { margin: 0; padding: 0; }
-body { font-family: arial; background-color: #eee; #rgb(240, 242, 244)}
+html, body { margin: 0; padding: 0; font-family: arial; }
+a { color:rgb(255,98,0);  }
+ul { list-style:none; margin: 0; padding: 0; }
 
-a { text-decoration: none; }
+hr { color: #ccc;}
 
-header { 
-    font-family: arial; font-style: italic; 
-    color:#EF6818; background-color:#BAC0C5; 
-    color:rgb(255,98,0);
-}
-header h1 { display:inline-block; font-size:40px; margin: 0; padding: 10px 10px; padding-left:150px; }
+#temp { cursor: pointer; _float:right; margin: 1em 0.3em; }
+.is-hidden { display:none; }
+body { background-color: #fcfcfc; }
+body.temp { background-color: #eee; }
 
-main { margin: 1em; }
+header { color: #fff; background-color:rgb(54,57,63); }
+.temp header { color:rgb(255,98,0); background-color:#BAC0C5; }
 
+header h1 { display:inline-block; font-size:2em; margin: 0; padding: 1rem 1rem; padding-left: 2rem; }
+.temp header h1 {  font-style: italic; text-transform: uppercase; font-size:2.5em;  padding-left: 3em;  text-shadow: 1px 1px #ff0000; }
+
+main { margin: 0 2em; }
+
+.info-links { float:right; }
 hr { clear:both; }
 
-.info-github { float:right; }
-.info p { padding-left: 50px; }
+.temp .downloads h2 {
+    background-color: rgb(255,15,94); 
+    border: 2px solid #fff; outline: 1px solid #bbb; padding: 0.5em; display:inline-block; 
+}
+.temp .downloads h2::after { content: " series"; }
 
-.is-hidden { display:none; }
-
-.downloads ul { list-style:none; }
-
-.downloads h2 { background-color: rgb(255,15,94); border: 2px solid #fff; outline: 1px solid #bbb; padding: 10px; display:inline-block; }
 
 .button-github {
-    font-size: 20px;
-    display:inline-block;
-    margin:3px; padding:10px;
-    #color:rgb(0,96,169);
-    color:rgb(178,159,95);
+    display:inline-block; margin:0.2em; padding:0.5em; text-decoration: none;
+    background-color:#f6f8fa; color:#24292f; border: 1px solid #d5d7da; border-radius: 6px;
+    font-size: 0.8em; width: 8em; text-align: center; white-space: nowrap;
+}
+.button-github:hover { background-color: #FFFFFF; }
+
+.temp .button-github {
+    font-weight: bold; color:rgb(178,159,95); border: 5px dotted rgb(178,159,95); border-radius: 20px;
+    background-color: transparent;
+}
+.temp .button-github:hover { background-color:rgb(178,159,95); color: #FFFFFF; }
+
+.button-discord { 
+    display: inline-block; margin:0.2em; padding: 0.5em;  text-decoration: none;
+    background-color:rgb(35,38,47); color: rgb(213,214,217); border-radius: 5px; border-radius: 6px;
+    font-size: 0.8em; width: 8em; text-align: center; white-space: nowrap;
+}
+
+.button-discord:hover { background-color:#404eed; color: #fff; }
+
+.temp .button-discord {
+    padding: 1em 4em; width: 10em; word-spacing: 10em; 
+    color: rgb(252,69,87); background-color: #ffffff; border: 2px solid black;
+    font-weight:bold; text-transform: uppercase; transform: rotate(-45deg); 
+    position: absolute; top:-5px; left:-60px;  text-align: left; white-space: pre-wrap;
+}
+.temp .button-discord:hover { color: rgb(252,69,87); background-color: #ffffff; }
+
+
+.button-download {
+    display:inline-block; margin:0.2em; padding:0.75em; text-decoration: none; border-radius: 5px;
     font-weight:bold;
-    border: 5px dotted rgb(178,159,95);
-    border-radius: 20px;
-    #background-color: #FFFFFF;
+    color: #c2c2c2; _border: 0.2em solid rgb(221,65,45); 
+    background-color:rgb(78,74,74);
+}
+.button-download:hover {
+    background-color: #343131; 
 }
 
-.button-github:hover {
-    background-color:rgb(178,159,95);
-    color: #FFFFFF;
+.temp .button-download {
+    margin:0.2em; padding:0.75em;  background-color:transparent;
+    color: rgb(221,65,45); border: 0.3em solid rgb(221,65,45); border-radius: 20px;
+ }
+
+.temp .button-download:hover { background-color: rgb(221,65,45); color: #FFFFFF; }
+
+.platform {
+    border-radius: 10px;
+    padding: 0.5em 1em;
 }
+.platform.windows { background-color: rgb(0,120,214); color:#fff; }
+.platform.linux { background-color: #df9128; color:#fff;}
+.platform.mac { background-color:#ddd; color: #4e4e4e; }
+.platform.web { background-color: rgb(221,65,45); color:#fff; }
 
-.downloads .button {
-    font-size: 20px;
-    display:inline-block;
-    margin:3px; padding:10px;
-    color: rgb(221,65,45);
-    #background-color: #FFFFFF;
-    font-weight:bold;
-    border: 5px solid rgb(221,65,45);
-    border-radius: 20px;
-}
-
-.downloads .button:hover {
-    background-color: rgb(221,65,45);
-    color: #FFFFFF;
-}
-
-
-.downloads .platform {
-    text-transform: uppercase; font-family:monospace; font-size: 24px; font-weight:bold;
-    color: rgb(248,198,17); 
-}
-
-.discord {
-    display: inline-block;
-    padding: 10px 50px;
-    border: 2px solid black;
-    background-color: #ffffff;
-    color: rgb(252,69,87);
-    transform: rotate(-45deg);
-    width: 90px;
-    text-transform: uppercase;
-    font-weight:bold;
-    position: absolute; top:-5px; left:-50px;
+.temp .platform {
+    text-transform: uppercase; font-family:monospace; font-size: 2em; font-weight:bold;
+    color: rgb(248,198,17);  background-color: transparent
 }
 
 .changes #changelog-link {
     color: #000;
-    font-size:15px;
-    font-weight:bold;
+    font-weight:bold; text-decoration: none;
 }
 .changes #changelog-link::before { content:'►'; }
 
@@ -88,6 +100,6 @@ hr { clear:both; }
     background-color: #fff;
     font-size: 0.9em;
     font-family: monospace;
-    padding: 10px;
+    padding: 1em;
     max-width: 600px;    
 }

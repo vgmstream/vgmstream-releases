@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>vgmstream</title>
     <link href="styles.css" rel="stylesheet" type="text/css">
     <!--<link rel="icon" type="image/x-icon" href="favicon.ico" sizes="any">-->
@@ -9,50 +10,53 @@
 </head>
 <body>
     <header>
-        <h1>VGMSTREAM</h1>
-        <span>(temp page)</span>
+        <h1>vgmstream</h1>
+        <span id="temp">(temp page)</span>
     </header>
 
     <main>
-        <div class="info-github">
-            <a class="button-github" href="https://github.com/vgmstream/vgmstream" target="_blank">Source on github!</a>
+        <div class="info-links">
+            <a class="button-github" href="https://github.com/vgmstream/vgmstream" target="_blank">Source on github</a>
+            <br/>
+            <a class="button-discord" href="https://discord.gg/gybU4f6Bwu" target="_blank">HCS64 Discord</a>
         </div>
 
-        <div class="info">
-            <p>
-                A library for playback of hundreds of streamed (prerecorded) audio formats used in video games.
-            <p>
-        </div>
+        <p>
+            A library for playback of hundreds of streamed (prerecorded) audio formats used in video games.
+        </p>
+        <p>
+            For more info please see <a href="https://github.com/vgmstream/vgmstream/blob/master/README.md" target="_blank">overview</a> and <a href="https://github.com/vgmstream/vgmstream/blob/master/doc/USAGE.md" target="_blank">usage guide</a>.
+        </p>
 
         <hr>
 
         <div class="downloads">
-            <h2>DOWNLOAD SERIES</h2>
+            <h2>Downloads</h2>
             <ul>
                 <li>
-                    <a class="button" href="https://github.com/vgmstream/vgmstream-releases/releases/download/nightly/foo_input_vgmstream.fb2k-component">foobar2000 component</a>
-                    <span class="platform">Windows</span>
+                    <a class="button-download" href="https://github.com/vgmstream/vgmstream-releases/releases/download/nightly/foo_input_vgmstream.fb2k-component">foobar2000 component (32-bit)</a>
+                    <span class="platform windows">Windows</span>
                 </li>
                 <li>
-                    <a class="button" href="https://github.com/vgmstream/vgmstream-releases/releases/download/nightly/vgmstream-win.zip">Command-line tools, Winamp and XMPlay plug-ins</a>
-                    <span class="platform">Windows</span>
+                    <a class="button-download" href="https://github.com/vgmstream/vgmstream-releases/releases/download/nightly/vgmstream-win.zip">Command-line, Winamp and XMPlay (32-bit)</a>
+                    <span class="platform windows">Windows</span>
                 </li>
                 <li>
-                    <a class="button" href="https://github.com/vgmstream/vgmstream-releases/releases/download/nightly/vgmstream-linux-cli.zip">Command-line tools (static build)</a>
-                    <span class="platform">Linux</span>
+                    <a class="button-download" href="https://github.com/vgmstream/vgmstream-releases/releases/download/nightly/vgmstream-linux-cli.zip">Command-line (static build)</a>
+                    <span class="platform linux">Linux</span>
                 </li>
                 <li>
-                    <a class="button" href="https://github.com/vgmstream/vgmstream-releases/releases/download/nightly/vgmstream-mac.zip">Command-line tools (static build)</a>
-                    <span class="platform">Mac</span>
+                    <a class="button-download" href="https://github.com/vgmstream/vgmstream-releases/releases/download/nightly/vgmstream-mac.zip">Command-line (static build)</a>
+                    <span class="platform mac">Mac</span>
                 </li>
                 <li>
-                    <a class="button" href="https://katiefrogs.github.io/vgmstream-web/" target="_blank">Online web player</a>
-                    <span class="platform">Web</span>
+                    <a class="button-download" href="https://katiefrogs.github.io/vgmstream-web/" target="_blank">Online web player</a>
+                    <span class="platform web">Web</span>
                 </li>
             </ul>
         </div>
 
-        <a class="discord" href="https://discord.gg/gybU4f6Bwu" target="_blank">HCS64 Discord</a>
+        <hr>
         
         <div class="changes">
             <a id='changelog-link' href="https://github.com/vgmstream/vgmstream-releases/releases/download/nightly/changelog.txt" target="_blank">Recent changes</a>
@@ -60,6 +64,6 @@
         </div>
     <main>
     
-    <script src="main.js"></script>
+    <script src="main.js?v20130131"></script>
 </body>
 </html>

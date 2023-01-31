@@ -3,10 +3,11 @@
 const $_id = (id) => document.getElementById(id);
 const RELEASE_URL = 'https://api.github.com/repos/vgmstream/vgmstream-releases/releases/tags/nightly'
 
-function load_changelog() {
-    
-    
-    
+function set_test() {
+    let $temp = $_id('temp');
+    $temp.addEventListener('click', (event) => {
+        document.body.classList.toggle('temp');
+    });
 }
 
 function set_changelog() {
@@ -14,7 +15,6 @@ function set_changelog() {
     let changelog_error = false;
     let $changelog_link = $_id('changelog-link');
     let $changelog_body = $_id('changelog-body');
-    let prevent_default = false;
     
     $changelog_link.addEventListener('click', (event) => {
         // in case of github oddities don't prevent default
@@ -53,5 +53,6 @@ function set_changelog() {
 }
 
 //auto
+set_test();
 set_changelog();
 })();
