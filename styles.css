@@ -1,30 +1,34 @@
 html, body { margin: 0; padding: 0; font-family: arial; }
 a { color:rgb(255,98,0);  }
 ul { list-style:none; margin: 0; padding: 0; }
-
-hr { color: #ccc;}
-
-#temp { cursor: pointer; _float:right; margin: 1em 0.3em; }
+li { padding:0.2em; }
+hr { color: #ccc; clear:both; }
 .is-hidden { display:none; }
+
+#beta { cursor: pointer; _float:right; margin: 1em 0.3em; }
+
 body { background-color: #fcfcfc; }
-body.temp { background-color: #eee; }
+body.beta { background-color: #eee; }
 
-header { color: #fff; background-color:rgb(54,57,63); }
-.temp header { color:rgb(255,98,0); background-color:#BAC0C5; }
+header { color: #fff; background-color:rgb(54,57,63); padding-left: 2rem; }
+.beta header { color:rgb(255,98,0); background-color:#BAC0C5; padding-left:6em; }
 
-header h1 { display:inline-block; font-size:2em; margin: 0; padding: 1rem 1rem; padding-left: 2rem; }
-.temp header h1 {  font-style: italic; text-transform: uppercase; font-size:2.5em;  padding-left: 3em;  text-shadow: 1px 1px #ff0000; }
+header h1 { display:inline-block; font-size:2.2em; margin: 0; padding: 0.5rem 0.5rem; }
+.beta header h1 {  font-style: italic; text-transform: uppercase; font-size:2.5em; text-shadow: 1px 1px #ff0000; }
 
-main { margin: 0 2em; }
+main { margin: 0 2em; min-width: 15em; }
 
 .info-links { float:right; }
-hr { clear:both; }
 
-.temp .downloads h2 {
+.beta .description p:first-of-type { margin-left: 2em;  }
+
+
+
+.beta .downloads h2 {
     background-color: rgb(255,15,94); 
-    border: 2px solid #fff; outline: 1px solid #bbb; padding: 0.5em; display:inline-block; 
+    border: 2px solid #fff; outline: 1px solid #bbb; padding: 0.2em 0.4em; display:inline-block; 
 }
-.temp .downloads h2::after { content: " series"; }
+.beta .downloads h2::after { content: " series"; }
 
 
 .button-github {
@@ -34,57 +38,61 @@ hr { clear:both; }
 }
 .button-github:hover { background-color: #FFFFFF; }
 
-.temp .button-github {
+.beta .button-github {
     font-weight: bold; color:rgb(178,159,95); border: 5px dotted rgb(178,159,95); border-radius: 20px;
+    padding:0.9em; 
     background-color: transparent;
 }
-.temp .button-github:hover { background-color:rgb(178,159,95); color: #FFFFFF; }
+.beta .button-github:hover { background-color:rgb(178,159,95); color: #FFFFFF; }
 
 .button-discord { 
     display: inline-block; margin:0.2em; padding: 0.5em;  text-decoration: none;
     background-color:rgb(35,38,47); color: rgb(213,214,217); border-radius: 5px; border-radius: 6px;
+    background-color:rgb(54,57,63); 
     font-size: 0.8em; width: 8em; text-align: center; white-space: nowrap;
 }
 
 .button-discord:hover { background-color:#404eed; color: #fff; }
 
-.temp .button-discord {
+.beta .button-discord {
     padding: 1em 4em; width: 10em; word-spacing: 10em; 
     color: rgb(252,69,87); background-color: #ffffff; border: 2px solid black;
     font-weight:bold; text-transform: uppercase; transform: rotate(-45deg); 
-    position: absolute; top:-5px; left:-60px;  text-align: left; white-space: pre-wrap;
+    position: absolute; top:-2em; left:-5em;  text-align: left; white-space: pre-wrap;
 }
-.temp .button-discord:hover { color: rgb(252,69,87); background-color: #ffffff; }
+.beta .button-discord:hover { color: rgb(252,69,87); background-color: #ffffff; }
 
 
 .button-download {
-    display:inline-block; margin:0.2em; padding:0.75em; text-decoration: none; border-radius: 5px;
+    display:inline-block; padding:0.75em; text-decoration: none; border-radius: 5px;
     font-weight:bold;
-    color: #c2c2c2; _border: 0.2em solid rgb(221,65,45); 
-    background-color:rgb(78,74,74);
+    color: #d2d2d2; _border: 0.2em solid rgb(221,65,45); 
+    background-color:#42464d;
 }
 .button-download:hover {
-    background-color: #343131; 
+    background-color: #d2d2d2; 
+    color:#42464d;
 }
 
-.temp .button-download {
-    margin:0.2em; padding:0.75em;  background-color:transparent;
+.beta .button-download {
+    padding:0.5em;  background-color:transparent;
     color: rgb(221,65,45); border: 0.3em solid rgb(221,65,45); border-radius: 20px;
  }
 
-.temp .button-download:hover { background-color: rgb(221,65,45); color: #FFFFFF; }
+.beta .button-download:hover { background-color: rgb(221,65,45); color: #FFFFFF; }
 
 .platform {
     border-radius: 10px;
-    padding: 0.5em 1em;
+    padding: 0.5em 0.75em;
+    display:inline-block;
 }
 .platform.windows { background-color: rgb(0,120,214); color:#fff; }
 .platform.linux { background-color: #df9128; color:#fff;}
 .platform.mac { background-color:#ddd; color: #4e4e4e; }
 .platform.web { background-color: rgb(221,65,45); color:#fff; }
 
-.temp .platform {
-    text-transform: uppercase; font-family:monospace; font-size: 2em; font-weight:bold;
+.beta .platform {
+    text-transform: uppercase; font-family:monospace; font-size: 1.75em; font-weight:bold; padding: 0.2em;
     color: rgb(248,198,17);  background-color: transparent
 }
 
@@ -104,4 +112,9 @@ hr { clear:both; }
     max-width: 60em;    
     margin: 0.5em 0 2em 0;
     max-height: 20em; overflow: auto;
+}
+
+@media screen and (max-width: 800px) {
+main { margin: 0 1em; }
+
 }

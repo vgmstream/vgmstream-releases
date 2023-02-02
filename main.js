@@ -3,10 +3,10 @@
 const $_id = (id) => document.getElementById(id);
 const RELEASE_URL = 'https://api.github.com/repos/vgmstream/vgmstream-releases/releases/tags/nightly'
 
-function set_test() {
-    let $temp = $_id('temp');
+function set_beta() {
+    let $temp = $_id('beta');
     $temp.addEventListener('click', (event) => {
-        document.body.classList.toggle('temp');
+        document.body.classList.toggle('beta');
     });
 }
 
@@ -53,6 +53,6 @@ function set_changelog() {
 }
 
 //auto
-set_test();
+set_beta();
 set_changelog();
 })();
